@@ -1,0 +1,267 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.h1 {
+    color: aqua;
+    font-weight: 200;
+}
+
+.html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #1A659E;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.body_login{
+    background-color: #E5E5E5;
+    margin: 0; /* Remove default margin */
+    padding: 0; 
+}
+
+.register_body{
+    background-color: #E5E5E5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0; /* Remove default margin */
+    padding: 0; 
+}
+
+/*nav*/
+nav,
+.nav-links {
+    display: flex;
+    text-decoration: antiquewhite;
+}
+
+nav {
+    justify-content: space-between; /* Space between items */
+    align-items: center;
+    height: 12vh;
+    background-color: #004E89;
+    width: 100%; /* Ensure navbar spans the full width */
+    padding: 0 2rem; /* Add some padding to the sides */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    position: fixed; /* Fix the navbar to the top of the page */
+    top: 0; /* Position at the top */
+    left: 0; /* Position at the left */
+    z-index: 1000; /* Ensure it stays above other elements */
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a {
+    color: gray;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover {
+    color: orange;
+    text-decoration: double;
+    text-underline-offset: 1rem;
+}
+
+.text-1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.span1{
+    color: #3751FE;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.span2{
+    color: gray;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.text-2 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border: gray 2px solid;
+    color: #3751FE;
+    font-size: 32px;
+    border-style: unset;
+    text-align: left;
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+
+.text-3{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    font-weight: 250;
+    color: gray;
+    margin-bottom: 25px;
+}
+
+.text-4{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    font-weight: 250;
+    color: gray;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+/*container*/
+.container {
+    width: 80%;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    height: 100%;
+    color: #EFEFD0;
+}
+
+.container-2{
+    padding-left: 200px;
+}
+
+.section_text{
+    font-size: 20px;
+    color: gray;
+    font-weight: 200;
+}
+
+.p1{
+    font-size: 20px;
+    color: gray;    
+    font-weight: 200;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.tai{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 40px;
+    color: gray;    
+    font-weight: 800;
+    text-align: center;
+}
+.logo{
+    display: flex;
+    size: 6rem;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.logo-2{
+    display: flex;
+    size: 6rem;
+    align-items: center;
+    justify-content: center;
+    height: 65vh;
+}
+
+/* .login_form{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #F7C59F;
+    border-radius: 10px;
+} */
+form{
+    width: 400px;
+    height:1000px;
+    background: #FFFFFF;
+    border: none;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 30px;
+}
+
+
+input {
+    display: block;
+    border: 2px solid gray;
+    width: 95%;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+label{
+    color: gray;
+    font-size: 14px;
+    padding: 10px;
+
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: gray;
+}
+
+.btn-container{
+    padding-top: 40px;
+    display: flex;
+    justify-content:left;
+    font-size: 12px;    
+    gap: 10px;
+
+
+
+}
+
+button {
+    display: flex;
+    background: #273FDE;
+    color: white;
+    border:#273FDE 1px solid;
+    width: 75px;
+    padding: 15px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+button:hover {
+    background: white;
+    color: #3751FE;
+    border: #273FDE 1px solid;
+}
+
+
+.reg_button{
+    display: flex;
+    width: 75px;
+    justify-content: center;
+    background:white;
+    padding: 15px;
+    color: #273FDE;
+    border: none;
+    border:#273FDE 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+
+}
+
+.reg_button:hover {
+    background: #273FDE;
+    color: white;
+}
+
